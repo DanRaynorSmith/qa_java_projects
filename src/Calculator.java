@@ -1,9 +1,10 @@
-package com.qa.calculator.with.menu;
+public class Calculator {
+    public static void main(String[] args) {
 
-public class CalculatorMethods {
+        System.out.println(multiplication(2, 5));
+        System.out.println(subtraction(10, 5));
+        System.out.println(division(12, 7));
 
-    public static double addition(double number1, double number2) {
-        return number1 + number2;
     }
 
     public static double multiplication(double number1, double number2) {
@@ -15,8 +16,11 @@ public class CalculatorMethods {
     }
 
     public static double division(double number1, double number2) {
+        if (number1 > number2) {
+            System.out.println("Division cannot be performed");
+            return -1;
+        }
         return number1 / number2;
     }
 
 }
-

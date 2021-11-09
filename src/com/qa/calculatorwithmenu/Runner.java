@@ -1,4 +1,4 @@
-package com.qa.calculator.with.menu;
+package com.qa.calculatorwithmenu;
 
 public class Runner {
     public static void main(String[] args) {
